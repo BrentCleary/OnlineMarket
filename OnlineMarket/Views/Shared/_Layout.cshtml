@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - OnlineMarket</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/OnlineMarket.styles.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+
+    <header class="staging">
+        <div class="logo staging">
+            <img class="navbar-img" src="/img/GameBoxHeader.jpg" alt="Online Market Logo">
+        </div>
+        <nav>
+            <div class="navbar-main staging">
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">Cart</a>
+                <a href="#">Account</a>
+            </div>
+        </nav>
+        <div class="nav-search-container staging">
+            <input class="nav-search-bar rounded-2" type="text" placeholder="Search for products...">
+            <button class="nav-search-btn rounded-2" type="submit">Search</button>
+        </div>
+    </header>
+
+    <div class="horizontal-content-container">
+        <div class="side-border left"></div>
+        <div class="staging container no-margin">
+            <main role="main" class="staging">
+                @RenderBody()
+            </main>
+        </div>
+        <div class="side-border right"></div>
+    </div>
+
+
+    <footer class="staging">
+        <ul class="staging footer-content">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <p>&copy; 2024 Online Market. All rights reserved.</p>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

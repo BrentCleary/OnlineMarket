@@ -1,0 +1,160 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* ----- ----- FONT ----- ----- */
+
+/* bebas-neue-regular */
+
+    
+
+
+
+/* ----- ----- LANDING PAGE CONTENT ----- ----- */
+
+.body {
+    margin-bottom: 60px;
+    background: linear-gradient(to bottom, white, #e8ab90);
+    font-family: "Bebas Neue", sans-serif;
+    /*#e8ab90 - Also a cool color for background - Salmon*/
+    /*#4800ff - Also a cool color for background - Purple*/
+}
+
+.product{
+    margin: 10px;
+
+}
+
+
+/* ----- ----- NAVBAR STYLING ----- ----- */ 
+
+.navbar-main{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.navbar-img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+
+ /*NAV MAIN LINKS*/ 
+.navbar-main a {
+    font-size: 40px;
+    text-decoration: none;
+}
+
+/* SEARCH BAR */
+.nav-search-container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+}
+.nav-search-bar{
+    width: 60%;
+    height: 40px;
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+}
+.nav-search-btn{
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    font-size: 18px;
+}
+
+
+/* ----- ----- MAIN CONTENT STYLING ----- ----- */
+
+
+.horizontal-content-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+
+/*for removal of boostrap built in p and m */ 
+.no-margin {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+
+/*empty space outside containers */
+.side-border {
+    flex: 1; /* This allows the side divs to grow and shrink equally */
+    background-color: white; /* Background color for visibility */
+}
+.left {
+    background-color: white; /* Left side color */
+}
+.right {
+    background-color: white; /* Right side color */
+}
+
+
+.vertical-border {
+    width: 100%;
+    height: 20px;
+    background-color: white; /* Left side color */
+}
+
+
+/* ----- ----- FOOTER STYLING ----- ----- */ 
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+
+/* ----- ----- SITE COLOR SCHEME ----- ----- */ 
+
+.clr-dk-purple{
+    color: #382B3D;
+}
+
+.clr-lt-pink {
+    color: #e8ab90;
+}
+
+.clr-lt-blue {
+    color: #6cd4f8;
+}
+
+.clr-dk-blue {
+    color: #3a68c0;
+}
+
+
+
+/* ----- ***** STAGING STYLING ***** ----- */ 
+
+.staging{
+    border: 1px dashed red;
+}

@@ -1,8 +1,60 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿
 
+<style>
 
+    .carousel-size{
+        height: 100%;
+    }
+
+    .center-img{
+        display:flex;
+        justify-content: center;
+    }
+
+</style>
+
+<div class="container">
+
+    @* Carousel Picture Row *@
+    <div class="row bg-secondary" style="height: 600px">
+        <div class="col center-img bg carousel-size">
+            <div id="carouselExample" class="carousel carousel-size slide">
+                <div class="carousel-inner carousel-size">
+                    <div class="carousel-item carousel-size active">
+                        <img src="~/images/FW_Bathroom.jpg" class="d-block carousel-size img-fluid" alt="Bathroom_Picture">
+                    </div>
+                    <div class="carousel-item carousel-size">
+                        <img src="~/images/FW_WoodenKitchen.jpg" class="d-block carousel-size img-fluid" alt="Bathroom_Picture">
+                    </div>
+                    <div class="carousel-item carousel-size">
+                        <img src="~/images/FW_WoodenRoomAndBench.jpg" class="d-block carousel-size img-fluid" alt="...">
+                    </div> 
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    
+    @* Customer Testimonials *@
+    <div class="row bg bg-dark" style="height:400px">
+        <div class="div">
+            <div class="div">
+                <div class="div">
+                    <h1>Test Div</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
 
 @{
 

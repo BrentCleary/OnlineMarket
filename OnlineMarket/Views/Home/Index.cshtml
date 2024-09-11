@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+
+    int numberOfProducts = 4;
+}
+
+@{
+    for(int i = 0; i < numberOfProducts; i++)
+    {
+        
+        <div class="product-listing staging">
+            <div class="vertical-border"></div>
+
+            <div class="product staging m-5">
+                <img src="product1.jpg" alt="Product 1">
+                <h2>Product Name</h2>
+                <p>$19.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="vertical-border"></div>
+
+        </div>
+    
+    }
+}
+
+    @*  <div class="product staging m-5">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product Name</h2>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+        </div> *@
