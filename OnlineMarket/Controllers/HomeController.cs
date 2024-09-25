@@ -1,21 +1,27 @@
 using Microsoft.AspNetCore.Mvc;
 using OnlineMarket.Models;
 using System.Diagnostics;
+using OnlineMarket.Services;
 
 namespace OnlineMarket.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private FileService _fileService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, FileService fileService)
         {
             _logger = logger;
+            _fileService = fileService;
         }
 
         public IActionResult Index()
         {
-            return View();
+            IEnumerable<string> imgFiles = _fileService.GetFilesStartingWith("img", "LightBox");
+
+
+            return View(imgFiles);
         }
 
         public IActionResult Privacy()

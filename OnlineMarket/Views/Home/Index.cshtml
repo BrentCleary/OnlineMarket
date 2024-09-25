@@ -1,22 +1,41 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-
-    int numberOfProducts = 4;
-}
+﻿@model IEnumerable<string>
 
 @{
-    for(int i = 0; i < numberOfProducts; i++)
-    {
-        
-        <div class="product-listing staging">
-            <div class="vertical-border"></div>
+    ViewData["Title"] = "Home Page";
+}
 
-            <div class="product staging m-5">
-                <img src="product1.jpg" alt="Product 1">
-                <h2>Product Name</h2>
-                <p>$19.99</p>
-                <button>Add to Cart</button>
+
+
+@{  
+
+    foreach(var imgPath in Model)
+    {     
+        <div class="product-listing staging">
+
+            <div class="vertical-border staging"></div>
+
+            <div class="product-container staging m-3 ">
+                <div class="product-imagebox">
+                    <img class="product-img" src="@imgPath" alt="light-box-image">
+                </div>
+                <div class="product-info staging">
+                    <div class ="product-title staging">
+                        <p>Light Box</p>
+                    </div>
+                    <div class="product-description staging">
+                        <p>A box of light from a warehouse.</p>
+                    </div>
+                </div>
+                <div class="product-purchase staging">
+                    <div class="product-price staging">
+                        <p class="staging">$19.99</p>
+                    </div>
+                    <div class="product-btn">
+                        <button class="addToCart-btn staging">Add to Cart</button>
+                    </div>
+                </div>
             </div>
+
             <div class="vertical-border"></div>
 
         </div>

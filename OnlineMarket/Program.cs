@@ -1,3 +1,5 @@
+using OnlineMarket.Services;
+
 namespace OnlineMarket
 {
     public class Program
@@ -7,8 +9,9 @@ namespace OnlineMarket
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddRazorPages();
             builder.Services.AddControllersWithViews();
-
+            builder.Services.AddSingleton<FileService>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
